@@ -1,4 +1,4 @@
-module.exports = class ServicoCalculoFatura {
+export class ServicoCalculoFatura {
     constructor(repo) {
       this.repo = repo;
     }
@@ -13,7 +13,7 @@ module.exports = class ServicoCalculoFatura {
   
     calcularTotalCreditos(apresentacoes){
       let creditos = 0;
-      for (let apre of apresentacoes) {
+      for (const apre of apresentacoes) {
         creditos += this.calcularCredito(apre);
       }
       return creditos; 
@@ -45,7 +45,7 @@ module.exports = class ServicoCalculoFatura {
   
     calcularTotalFatura(apresentacoes) {
       let totalFatura = 0;
-      for (let apre of apresentacoes) {
+      for (const apre of apresentacoes) {
         totalFatura += this.calcularTotalApresentacao(apre);
       }
       return totalFatura;

@@ -1,0 +1,13 @@
+{
+  "name": "roteirorefactoringjs",
+  "version": "1.0.0",
+  "description": "**Prof. Marco Tulio Valente**",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

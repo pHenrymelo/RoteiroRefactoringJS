@@ -1,6 +1,6 @@
-const { readFileSync } = require('fs')
+import { readFileSync } from "node:fs"
 
-module.exports = class Repositorio {
+export class Repositorio {
     constructor() {
       this.pecas = JSON.parse(readFileSync('./pecas.json'));
     }
